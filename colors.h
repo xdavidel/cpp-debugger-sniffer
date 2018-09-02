@@ -1,0 +1,7 @@
+#define CMD_COLOR_RED 4
+#define CMD_COLOR_GREEN 2
+#define CMD_COLOR_YELLOW 6
+#define CMD_COLOR_BLUE 1
+#define CMD_COLOR_MAGENTA 5
+#define CMD_COLOR_CYAN 3
+#define CMD_COLOR_RESET 7

@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc ${workspaceFolder}/main.c -g -o debugger-sniffer",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build release",
+            "type": "shell",
+            "command": "gcc ${workspaceFolder}/main.c -O4 -s -o debugger-sniffer",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "del ${workspaceFolder}\\*.exe"
+        }
+    ]
+}
